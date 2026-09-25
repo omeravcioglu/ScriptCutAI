@@ -184,3 +184,5 @@ Changes made when preparing this repository (the working copy on my PC is unchan
 - `setup-new-computer.ps1` no longer hides pip errors (`2>$null`). If installing dependencies fails, it now stops and says so, instead of reporting success.
 - `install-extension.ps1` prints the backend path relative to where the script lives, instead of a hardcoded personal folder.
 - The Python virtual environment (`backend/venv`, about 1 GB) is not stored in git; setup recreates it.
+
+Copyright © Omer Avcioglu (McHunter Studio). **All rights reserved.** Viewing only; see [LICENSE](LICENSE).
