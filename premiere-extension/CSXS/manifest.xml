@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest Version="7.0" ExtensionBundleId="com.scriptcutai.panel" ExtensionBundleVersion="1.0.0" ExtensionBundleName="ScriptCutAI">
+    
+    <ExtensionList>
+        <Extension Id="com.scriptcutai.panel.main" Version="1.0.0"/>
+    </ExtensionList>
+    
+    <ExecutionEnvironment>
+        <HostList>
+            <!-- Premiere Pro CC 2019 and later -->
+            <Host Name="PPRO" Version="13.0"/>
+        </HostList>
+        <LocaleList>
+            <Locale Code="All"/>
+        </LocaleList>
+        <RequiredRuntimeList>
+            <RequiredRuntime Name="CSXS" Version="9.0"/>
+        </RequiredRuntimeList>
+    </ExecutionEnvironment>
+    
+    <DispatchInfoList>
+        <Extension Id="com.scriptcutai.panel.main">
+            <DispatchInfo>
+                <Resources>
+                    <MainPath>./index.html</MainPath>
+                    <ScriptPath>./jsx/premiere.jsx</ScriptPath>
+                    <CEFCommandLine>
+                        <Parameter>--enable-nodejs</Parameter>
+                        <Parameter>--mixed-context</Parameter>
+                    </CEFCommandLine>
+                </Resources>
+                <Lifecycle>
+                    <AutoVisible>true</AutoVisible>
+                </Lifecycle>
+                <UI>
+                    <Type>Panel</Type>
+                    <Menu>ScriptCutAI</Menu>
+                    <Geometry>
+                        <Size>
+                            <Height>600</Height>
+                            <Width>400</Width>
+                        </Size>
+                        <MinSize>
+                            <Height>400</Height>
+                            <Width>300</Width>
+                        </MinSize>
+                    </Geometry>
+                    <Icons/>
+                </UI>
+            </DispatchInfo>
+        </Extension>
+    </DispatchInfoList>
+    
+</ExtensionManifest>
+

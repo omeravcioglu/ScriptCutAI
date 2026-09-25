@@ -1,0 +1,25 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Local config / secrets
+.env
+.env.*
+
+# Media and temp files produced while testing
+*.wav
+*.mp3
+*.mp4
+*.mov
+temp/
+tmp/
+
+# IDE / OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

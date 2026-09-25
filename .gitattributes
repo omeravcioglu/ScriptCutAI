@@ -1,0 +1,4 @@
+# Store every file byte-for-byte (no line-ending conversion)
+* -text
+*.cs diff=csharp
+*.java diff=java
