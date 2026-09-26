@@ -74,6 +74,13 @@ Interactive API docs are served by FastAPI at `http://127.0.0.1:8000/docs` while
 
 ## Installation (One-Time Setup)
 
+**Quick option:** double-click `INSTALL.bat`. It runs `setup-new-computer.ps1`, which:
+- installs Python if needed,
+- creates the backend's virtual environment and installs the dependencies (it stops with an error if that fails),
+- installs and enables the Premiere Pro extension.
+
+Or follow the manual steps below.
+
 ### Step 1: Install Python 3.12
 
 Download from: https://www.python.org/downloads/
